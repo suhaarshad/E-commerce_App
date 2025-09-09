@@ -1,0 +1,128 @@
+import 'package:ecom/screens/home_screen.dart';
+import 'package:ecom/screens/login_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:introduction_screen/introduction_screen.dart';
+
+class OnboardingScreen extends StatelessWidget {
+  final introKey = GlobalKey<IntroductionScreenState>();
+
+  // const OnboardingScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final pageDecoration = PageDecoration(
+      titleTextStyle: TextStyle(
+        fontWeight: FontWeight.w700,
+        fontSize: 28,
+      ),
+      bodyTextStyle: TextStyle(
+        fontSize: 19,
+      ),
+      bodyPadding: EdgeInsets.fromLTRB(16, 0, 16, 16),
+      pageColor: Colors.white,
+      imagePadding: EdgeInsets.zero,
+    );
+
+    return IntroductionScreen(
+      key: introKey,
+      globalBackgroundColor: Colors.white,
+      pages: [
+        PageViewModel(
+          title: 'Quality Products',
+          body:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+              'Lorem Ipsum has been the industry'
+              '/s standard dummy text ever since the 1500s.',
+          image: Image.asset(
+            'assets/splash_1.png',
+            width: 200,
+          ),
+          decoration: pageDecoration,
+        ),
+        PageViewModel(
+          title: 'Big Discount',
+          body:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+              'Lorem Ipsum has been the industry'
+              '/s standard dummy text ever since the 1500s.',
+          image: Image.asset(
+            'assets/splash_2.png',
+            width: 200,
+          ),
+          decoration: pageDecoration,
+        ),
+
+        PageViewModel(
+            title: 'Free Delivery',
+            body:
+                'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                'Lorem Ipsum has been the industry'
+                '/s standard dummy text ever since the 1500s.',
+            image: Image.asset(
+              'assets/splash_3.png',
+              width: 200,
+            ),
+            decoration: pageDecoration,
+
+            footer: Padding(
+              padding: EdgeInsets.only(left: 15, right: 15, top: 50),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LoginScreen()));
+                },
+                child: Text(
+                  "Login",
+                  style: TextStyle(fontSize: 18, color: Colors.white),
+                ),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF2292c1),
+                    minimumSize: Size.fromHeight(55),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    )),
+              ),
+            )),
+      ],
+
+      showSkipButton: false,
+      showNextButton: true,
+      showDoneButton: false,
+      showBackButton: true,
+
+      back: Text('Back',
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            color: Color(0xFF2292c1),
+          )),
+
+      next: Text('Next',
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            color: Color(0xFF2292c1),
+          )),
+
+      // done: Text('Done', style:TextStyle(
+      //   fontWeight: FontWeight.w600,
+      //   color: Color(0xFF2292c1),
+      // )),
+      // skip: Text('Skip', style:TextStyle(
+      //   fontWeight: FontWeight.w600,
+      //   color: Color(0xFF2292c1),
+      // )),
+      onDone: () {},
+      onSkip: () {},
+      dotsDecorator: DotsDecorator(
+          size: Size.square(10),
+          activeColor: Color(0xFF2292c1),
+          activeSize: Size(20, 10),
+          color: Colors.black26,
+          spacing: EdgeInsets.symmetric(
+            horizontal: 3,
+          ),
+          activeShape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(25),
+          )),
+    );
+  }
+}
