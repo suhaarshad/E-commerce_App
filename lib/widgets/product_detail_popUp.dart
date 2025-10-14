@@ -113,7 +113,6 @@ class ProductDetailPopUp extends StatelessWidget {
                               fontSize: 20)),
                     ],
                   ),
-
                   SizedBox(height: 20,),
                   InkWell(
                     onTap: (){

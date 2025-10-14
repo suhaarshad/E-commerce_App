@@ -7,7 +7,6 @@ class ContainerButtonModel extends StatelessWidget {
   final String? itext;
 
   const ContainerButtonModel({super.key, this.bgColor, this.containerWidth, this.itext});
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,8 +23,7 @@ class ContainerButtonModel extends StatelessWidget {
           fontSize: 25,
           color: Colors.white,
         ),),
-      )
-
+      ),
     );
   }
 }
