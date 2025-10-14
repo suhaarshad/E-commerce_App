@@ -16,7 +16,6 @@ class ProductDetailPopUp extends StatelessWidget {
     Colors.green.shade800,
     Colors.brown
   ];
-
   // const ProductDetailPopUp({super.key});
 
   @override

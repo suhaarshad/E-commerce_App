@@ -124,7 +124,6 @@ class ProductScreen extends StatelessWidget {
                       ),
                     ),
                     ProductDetailPopUp(),
-
                   ],
                 )
               ],

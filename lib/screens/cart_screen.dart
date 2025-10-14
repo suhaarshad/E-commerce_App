@@ -29,6 +29,7 @@ class CartScreen extends StatelessWidget {
     "\$50",
     "\$100",
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
