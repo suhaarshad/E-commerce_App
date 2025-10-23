@@ -164,6 +164,7 @@ class CartScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
+
               InkWell(
                 onTap: (){},
                 child: ContainerButtonModel(
@@ -172,8 +173,6 @@ class CartScreen extends StatelessWidget {
                   itext: "Checkout",
                 ),
               ),
-
-
             ],
           ),
         ),
