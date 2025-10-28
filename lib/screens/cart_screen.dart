@@ -124,6 +124,7 @@ class CartScreen extends StatelessWidget {
                       );
                     }),
               ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -146,6 +147,7 @@ class CartScreen extends StatelessWidget {
                 height: 20,
                   thickness: 2,
               ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -164,7 +166,6 @@ class CartScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-
               InkWell(
                 onTap: (){},
                 child: ContainerButtonModel(
