@@ -1,11 +1,6 @@
 import 'package:ecom/screens/login_screen.dart';
-<<<<<<< HEAD
 import 'package:ecom/screens/navigation_screen.dart';
-=======
->>>>>>> d6a64b737f6a2937b378757052b5e4208eb1c94a
 import 'package:flutter/material.dart';
-
-import 'home_screen.dart';
 
 class Signupcreen extends StatelessWidget {
   const Signupcreen({super.key});
@@ -79,11 +74,7 @@ class Signupcreen extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-<<<<<<< HEAD
                               builder: (context) => NavigationScreen()));
-=======
-                              builder: (context) => HomeScreen()));
->>>>>>> d6a64b737f6a2937b378757052b5e4208eb1c94a
                     },
                     child: Text(
                       "Create Account",

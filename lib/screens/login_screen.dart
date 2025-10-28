@@ -1,8 +1,8 @@
 import 'package:ecom/screens/forgotpass_screen.dart';
-<<<<<<< HEAD
+
 import 'package:ecom/screens/navigation_screen.dart';
-=======
->>>>>>> d6a64b737f6a2937b378757052b5e4208eb1c94a
+
+
 import 'package:ecom/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -70,15 +70,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-<<<<<<< HEAD
-                              builder: (context) => NavigationScreen()));
-=======
-                              builder: (context) => HomeScreen()));
->>>>>>> d6a64b737f6a2937b378757052b5e4208eb1c94a
-                    },
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => NavigationScreen() ));},
                     child: Text(
                       "Log In",
                       style: TextStyle(fontSize: 18, color: Colors.white),
