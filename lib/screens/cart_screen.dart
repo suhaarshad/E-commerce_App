@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:ecom/widgets/container_button_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -28,10 +29,17 @@ class CartScreen extends StatelessWidget {
     "\$50",
     "\$100",
   ];
+=======
+import 'package:flutter/material.dart';
+
+class CartScreen extends StatelessWidget {
+  const CartScreen({super.key});
+>>>>>>> d6a64b737f6a2937b378757052b5e4208eb1c94a
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       appBar: AppBar(
         title: Text("Cart"),
         leading: BackButton(),
@@ -174,6 +182,9 @@ class CartScreen extends StatelessWidget {
           ),
         ),
       ),
+=======
+      body: Center(child: Text('cart sceeen')),
+>>>>>>> d6a64b737f6a2937b378757052b5e4208eb1c94a
     );
   }
 }
