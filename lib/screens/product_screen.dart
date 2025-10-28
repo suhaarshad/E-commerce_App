@@ -108,6 +108,7 @@ class ProductScreen extends StatelessWidget {
                 SizedBox(
                   height: 30,
                 ),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [

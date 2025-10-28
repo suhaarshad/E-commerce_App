@@ -1,5 +1,4 @@
 import 'package:ecom/widgets/container_button_model.dart';
-import 'package:ecom/widgets/product_detail_popUp.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -124,7 +123,6 @@ class CartScreen extends StatelessWidget {
                       );
                     }),
               ),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -145,32 +143,30 @@ class CartScreen extends StatelessWidget {
               ),
               Divider(
                 height: 20,
-                  thickness: 2,
+                thickness: 2,
               ),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Total Payment',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20
-                  ),),
-
-                  Text('\$400.0',
+                  Text(
+                    'Total Payment',
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                  ),
+                  Text(
+                    '\$400.0',
                     style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 20,
-                      color: Colors.red
-                    ),)
+                        color: Colors.red),
+                  )
                 ],
               ),
               SizedBox(height: 20),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 child: ContainerButtonModel(
                   bgColor: Color(0xFF2292c1),
-                    containerWidth: MediaQuery.of(context).size.width,
+                  containerWidth: MediaQuery.of(context).size.width,
                   itext: "Checkout",
                 ),
               ),
