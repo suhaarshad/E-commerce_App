@@ -1,6 +1,7 @@
 import 'package:ecom/widgets/container_button_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ecom/screens/paymentmethod_sceen.dart';
 
 class CartScreen extends StatelessWidget {
   CartScreen({super.key});
@@ -163,7 +164,10 @@ class CartScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) =>
+                     PaymentMethodScreen() ) );
+                },
                 child: ContainerButtonModel(
                   bgColor: Color(0xFF2292c1),
                   containerWidth: MediaQuery.of(context).size.width,

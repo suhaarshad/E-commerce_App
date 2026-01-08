@@ -10,18 +10,19 @@ class ContainerButtonModel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 60,
-        width: containerWidth,
+     return
+    Container(
+      height: 50,
+        width: double.infinity,
         decoration: BoxDecoration(
           color: bgColor,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(12),
         ),
       child: Center(
         child: Text( itext!,
         style: TextStyle(
           fontWeight: FontWeight.bold,
-          fontSize: 25,
+          fontSize: 19,
           color: Colors.white,
         ),),
       ),
