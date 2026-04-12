@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/container_button_model.dart';
+import 'order_success_screen.dart';
 
 class OrderConfirmationScreen extends StatelessWidget {
   const OrderConfirmationScreen({super.key});
@@ -17,13 +18,12 @@ class OrderConfirmationScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             /// DELIVERY ADDRESS
-            const Text(
+            Text(
               "Delivery Address",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
 
             Container(
               width: double.infinity,
@@ -33,31 +33,73 @@ class OrderConfirmationScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:[
-                  Text(
-                    "123 Street Name,\nKarachi, Pakistan\n+92 300 1234567",
-                    style: TextStyle(fontSize: 15),
-                  ),
-                  Align(
-                    alignment: Alignment.topRight,
-                    child: TextButton(onPressed: (){}, child: Text("Change",style: TextStyle(
-                      color: Colors.red,
-                      fontSize: 18
-                    ),)),
-                  )
-
-                ]
-              ),
-
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "123 Street Name,\nKarachi, Pakistan\n+92 300 1234567",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Change",
+                            style: TextStyle(color: Colors.red, fontSize: 18),
+                          )),
+                    )
+                  ]),
             ),
 
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
+
+            /// PAYMENT METHOD
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Payment Method",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                TextButton(
+                    onPressed: () {},
+                    child: Align(
+                      alignment: Alignment.topRight,
+                      child: Text(
+                        "Change",
+                        style: TextStyle(color: Colors.red, fontSize: 18),
+                      ),
+                    )),
+              ],
+            ),
+
+            SizedBox(height: 8),
+
+            Row(
+              children: [
+                Container(
+                  height: 40,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/mastercard.png')),
+                    borderRadius: BorderRadius.circular(10.0),
+                    border: Border.all(color: Colors.grey.shade300),
+                  ),
+                ),
+                SizedBox(width: 20),
+                Text(
+                  "**** **** **** 3948",style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+
+            SizedBox(height: 20),
 
             /// ORDER ITEMS
-            const Text(
+            Text(
               "Order Items",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
 
@@ -67,31 +109,31 @@ class OrderConfirmationScreen extends StatelessWidget {
             const SizedBox(height: 20),
 
             /// PRICE DETAILS
-            const Text(
-              "Price Details",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            const Text("Price Details",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
 
-            _priceRow("Items Total", "\$ 300.00"),
-            _priceRow("Delivery Fee", "\$ 10.00"),
+            _priceRow("Sub-Total", "\$ 300.00"),
+            _priceRow("Shipping Fee", "\$ 10.00"),
             const Divider(),
-            _priceRow("Total Payable", "\$ 400.00", isBold: true),
+            _priceRow("Total Payment", "\$ 400.00", isBold: true),
 
             const Spacer(),
 
             /// CONFIRM BUTTON
             InkWell(
               onTap: () {
-                Navigator.push(context,
+                Navigator.push(
+                    context,
                     MaterialPageRoute(
-                      builder: (context) => OrderConfirmationScreen(),
+                      builder: (context) => OrderSuccessScreen(),
                     ));
               },
               child: ContainerButtonModel(
                 itext: 'Confirm Order',
-                containerWidth: MediaQuery.of(context).size.width,
-                bgColor: Color(0xFF2292c1),
+                bgColor: Color(0xFF779650),
+
               ),
             )
           ],
@@ -106,8 +148,8 @@ class OrderConfirmationScreen extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(name, style: const TextStyle(fontSize: 15)),
-          Text(price, style: const TextStyle(fontSize: 15)),
+          Text(name, style:  TextStyle(fontSize: 18)),
+          Text(price, style: TextStyle(fontSize: 18)),
         ],
       ),
     );
@@ -119,17 +161,16 @@ class OrderConfirmationScreen extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 15,
+          Text(title, style: TextStyle(
+              fontSize: 18,
               fontWeight: isBold ? FontWeight.bold : FontWeight.normal,
             ),
           ),
           Text(
             value,
             style: TextStyle(
-              fontSize: 15,
+              fontSize: 18,
+              color: Colors.red,
               fontWeight: isBold ? FontWeight.bold : FontWeight.normal,
             ),
           ),
@@ -138,4 +179,3 @@ class OrderConfirmationScreen extends StatelessWidget {
     );
   }
 }
-

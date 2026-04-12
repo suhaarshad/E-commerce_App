@@ -20,11 +20,15 @@ class ProductDetailPopUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return SizedBox(
+        height: 40,
+        width: 180,
+  child: InkWell(
       onTap: () {
         showModalBottomSheet(
-          backgroundColor: Colors.transparent,
           context: context,
+          isScrollControlled: true,
+          backgroundColor: Colors.transparent,
           builder: (context) => Container(
             height: MediaQuery.of(context).size.height / 2.5,
             decoration: BoxDecoration(
@@ -119,8 +123,7 @@ class ProductDetailPopUp extends StatelessWidget {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => CartScreen()));
                     },
                     child: ContainerButtonModel(
-                      bgColor: Color(0xFF2292c1),
-                      containerWidth: MediaQuery.of(context).size.width,
+                      bgColor: Color(0xFF779650),
                       itext: "Checkout",
                     ),
                   )
@@ -131,10 +134,10 @@ class ProductDetailPopUp extends StatelessWidget {
         );
       },
       child: ContainerButtonModel(
-        bgColor: Color(0xFF2292c1),
-        containerWidth: MediaQuery.of(context).size.width / 1.5,
+        bgColor: Color(0xFF779650),
+        containerWidth: MediaQuery.of(context).size.width /1.5,
         itext: "Buy Now",
       ),
-    );
+      ));
   }
 }

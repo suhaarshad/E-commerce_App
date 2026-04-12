@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Icon(
               Icons.shopping_cart,
               size: 250,
-              color: Color(0xFF2292c1),
+              color: Color(0xFF779650),
             ),
             Text(
               'E-Comm',

@@ -21,7 +21,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
   List<Widget> pages = [
     HomeScreen(),
     CartScreen(),
-    FavouritesScreen(),
+    FavoritesScreen(),
     ProfileScreen(),
   ];
 
@@ -39,7 +39,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           Icons.qr_code,
           size: 20,
         ),
-        backgroundColor: Color(0xFF2292c1),
+        backgroundColor: Color(0xFF779650),
       ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -53,7 +53,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           CupertinoIcons.profile_circled,
         ],
         inactiveColor: Colors.black.withOpacity(0.5),
-        activeColor: Color(0xFF2292c1),
+        activeColor: Color(0xFF779650),
         gapLocation: GapLocation.center,
         activeIndex: pageIndex,
         iconSize: 25,

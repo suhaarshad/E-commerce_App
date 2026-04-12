@@ -169,8 +169,7 @@ class CartScreen extends StatelessWidget {
                      PaymentMethodScreen() ) );
                 },
                 child: ContainerButtonModel(
-                  bgColor: Color(0xFF2292c1),
-                  containerWidth: MediaQuery.of(context).size.width,
+                  bgColor: Color(0xFF779650),
                   itext: "Checkout",
                 ),
               ),

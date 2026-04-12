@@ -39,6 +39,7 @@ class OnboardingScreen extends StatelessWidget {
           ),
           decoration: pageDecoration,
         ),
+
         PageViewModel(
           title: 'Big Discount',
           body:
@@ -76,7 +77,7 @@ class OnboardingScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 18, color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF2292c1),
+                    backgroundColor: Color(0xFF779650),
                     minimumSize: Size.fromHeight(55),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -93,13 +94,13 @@ class OnboardingScreen extends StatelessWidget {
       back: Text('Back',
           style: TextStyle(
             fontWeight: FontWeight.w600,
-            color: Color(0xFF2292c1),
+            color: Color(0xFF779650),
           )),
 
       next: Text('Next',
           style: TextStyle(
             fontWeight: FontWeight.w600,
-            color: Color(0xFF2292c1),
+            color: Color(0xFF779650),
           )),
 
       // done: Text('Done', style:TextStyle(
@@ -114,7 +115,7 @@ class OnboardingScreen extends StatelessWidget {
       onSkip: () {},
       dotsDecorator: DotsDecorator(
           size: Size.square(10),
-          activeColor: Color(0xFF2292c1),
+          activeColor: Color(0xFF779650),
           activeSize: Size(20, 10),
           color: Colors.black26,
           spacing: EdgeInsets.symmetric(

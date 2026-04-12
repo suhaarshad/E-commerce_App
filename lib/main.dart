@@ -2,6 +2,7 @@ import 'package:ecom/screens/forgotpass_screen.dart';
 import 'package:ecom/screens/login_screen.dart';
 import 'package:ecom/screens/navigation_screen.dart';
 import 'package:ecom/screens/onboarding_screen.dart';
+import 'package:ecom/screens/product_screen.dart';
 import 'package:ecom/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.brown[400],
       ),
-      home: NavigationScreen(),
+      home: SplashScreen(),
     );
   }
 }

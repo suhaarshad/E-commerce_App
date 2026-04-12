@@ -76,7 +76,7 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
                         },
                         child: Icon(
                           CupertinoIcons.multiply,
-                          color: Color(0xFFDB3022),
+                          color: Colors.black,
                         ),
                       ),
                     ),
@@ -98,7 +98,7 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
                       style: TextStyle(fontSize: 18, color: Colors.white),
                     ),
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF2292c1),
+                        backgroundColor: Color(0xFF779650),
                         minimumSize: Size.fromHeight(55),
                         elevation: 4,
                         shadowColor: Colors.grey,
@@ -137,7 +137,7 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w600,
-                            color: Color(0xFF2292c1),
+                            color: Color(0xFF779650),
                           ),
                         )),
                   ),

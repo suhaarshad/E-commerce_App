@@ -5,7 +5,6 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import '../widgets/product_detail_popUp.dart';
 
 class ProductScreen extends StatelessWidget {
-  // const ProductScreen({super.key});
 
   List<String> imageList = [
     'assets/img_1.jpg',
@@ -44,44 +43,47 @@ class ProductScreen extends StatelessWidget {
                       autoPlay: false,
                       showIndicator: true,
                     )),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Text(
-                          'Warm Zipper',
-                          style: TextStyle(
-                            color: Colors.black87,
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold,
+                Padding(
+                  padding:EdgeInsets.symmetric(vertical: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // SizedBox(
+                          //   height: 30,
+                          // ),
+                          Text(
+                            'Warm Zipper',
+                            style: TextStyle(
+                              color: Colors.black87,
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        // SizedBox(
-                        //   height: 5,
-                        // ),
-                        Text(
-                          'Hooded Jacket',
-                          style: TextStyle(
-                              color: Colors.black54,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18),
-                        ),
-                      ],
-                    ),
-                    Text(
-                      '\$800.00',
-                      style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
+                          // SizedBox(
+                          //   height: 5,
+                          // ),
+                          Text(
+                            'Hooded Jacket',
+                            style: TextStyle(
+                                color: Colors.black54,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18),
+                          ),
+                        ],
                       ),
-                    ),
-                  ],
+                      Text(
+                        '\$800.00',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 10,
@@ -126,9 +128,11 @@ class ProductScreen extends StatelessWidget {
                         color: Color(0x1F989797),
                         borderRadius: BorderRadius.circular(30),
                       ),
-                      child: Icon(
-                        Icons.shopping_cart,
-                        color: Color(0xFF2292c1),
+                      child: Center(
+                        child: Icon(
+                          Icons.shopping_cart,
+                          color: Color(0xFF779650),
+                        ),
                       ),
                     ),
                     ProductDetailPopUp(),

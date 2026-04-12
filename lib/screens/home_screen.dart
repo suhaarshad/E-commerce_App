@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                         decoration: InputDecoration(
                           prefixIcon: Icon(
                             Icons.search,
-                            color: Color(0xFF2292c1),
+                            color: Color(0xFF779650),
                           ),
                           label: Text('Find your product'),
                           border: InputBorder.none,
@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                       child: Center(
                         child: Icon(
                           Icons.notifications,
-                          color: Color(0xFF2292c1),
+                          color: Color(0xFF779650),
                         ),
                       ),
                     ),

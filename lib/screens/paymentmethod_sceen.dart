@@ -323,8 +323,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                   },
                   child: ContainerButtonModel(
                     itext: "Confirm Payment",
-                    containerWidth: size.width,
-                    bgColor: Color(0xFF2292c1),
+                    bgColor: Color(0xFF779650),
                   ),
                 ),
 

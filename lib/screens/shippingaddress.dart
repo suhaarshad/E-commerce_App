@@ -57,8 +57,7 @@ class ShippingAddress extends StatelessWidget {
               },
               child: ContainerButtonModel(
                 itext: 'Save Address',
-                containerWidth: MediaQuery.of(context).size.width,
-                bgColor: Color(0xFF2292c1),
+                bgColor: Color(0xFF779650),
               ),
             )
           ],
