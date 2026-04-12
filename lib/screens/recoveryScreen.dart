@@ -45,7 +45,6 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                     height: 25.0,
                   ),
 
-
                   TextFormField(
                     decoration: InputDecoration(
                       labelText: 'Reset Code',

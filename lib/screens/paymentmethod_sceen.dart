@@ -326,7 +326,6 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                     bgColor: Color(0xFF779650),
                   ),
                 ),
-
               ],
             ),
           ),

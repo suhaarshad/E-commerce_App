@@ -109,7 +109,6 @@ class _OTPVerifyScreenState extends State<OTPVerifyScreen> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   )),
-
             ),
           ],
         ),

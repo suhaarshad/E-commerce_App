@@ -162,6 +162,7 @@ class CartScreen extends StatelessWidget {
                   )
                 ],
               ),
+
               SizedBox(height: 20),
               InkWell(
                 onTap: () {

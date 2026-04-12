@@ -141,3 +141,4 @@ class ProductDetailPopUp extends StatelessWidget {
       ));
   }
 }
+

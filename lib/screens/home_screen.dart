@@ -123,6 +123,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
+
                 Container(
                   // color: Colors.red,
                   height: 180,

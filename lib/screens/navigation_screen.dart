@@ -44,7 +44,6 @@ class _NavigationScreenState extends State<NavigationScreen> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
-
       bottomNavigationBar: AnimatedBottomNavigationBar(
         icons: [
           CupertinoIcons.home,

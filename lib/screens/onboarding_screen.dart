@@ -103,14 +103,6 @@ class OnboardingScreen extends StatelessWidget {
             color: Color(0xFF779650),
           )),
 
-      // done: Text('Done', style:TextStyle(
-      //   fontWeight: FontWeight.w600,
-      //   color: Color(0xFF2292c1),
-      // )),
-      // skip: Text('Skip', style:TextStyle(
-      //   fontWeight: FontWeight.w600,
-      //   color: Color(0xFF2292c1),
-      // )),
       onDone: () {},
       onSkip: () {},
       dotsDecorator: DotsDecorator(

@@ -116,7 +116,6 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
                     style: TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.bold,
-
                     ),
                     ),
                   ),

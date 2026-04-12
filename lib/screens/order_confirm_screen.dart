@@ -133,7 +133,6 @@ class OrderConfirmationScreen extends StatelessWidget {
               child: ContainerButtonModel(
                 itext: 'Confirm Order',
                 bgColor: Color(0xFF779650),
-
               ),
             )
           ],
