@@ -41,7 +41,7 @@ This project focuses on clean design, smooth navigation, and a complete user int
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 lib/
 │
