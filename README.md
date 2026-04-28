@@ -44,31 +44,32 @@ This project focuses on clean design, smooth navigation, and a complete user int
 ## 📂 Project Structure
 
 lib/
-│── screens/
-│   ├── splash_screen.dart
-│   ├── onboarding_screen.dart
-│   ├── login_screen.dart
-│   ├── signup_screen.dart
-│   ├── otp_screen.dart
-│   ├── otp_verify_screen.dart
-│   ├── forgotpass_screen.dart
-│   ├── recoveryScreen.dart
-│   ├── home_screen.dart
-│   ├── product_screen.dart
-│   ├── cart_screen.dart
-│   ├── favourites_screen.dart
-│   ├── shippingaddress.dart
-│   ├── paymentmethod_screen.dart
-│   ├── order_confirm_screen.dart
-│   ├── order_success_screen.dart
-│   ├── profile_screen.dart
-│   ├── navigation_screen.dart
 │
-│── widgets/
-│   ├── container_button_model.dart
-│   ├── product_detail_popup.dart
+├── main.dart
 │
-│── main.dart
+├── screens/
+│ ├── splash_screen.dart
+│ ├── onboarding_screen.dart
+│ ├── login_screen.dart
+│ ├── signup_screen.dart
+│ ├── otp_screen.dart
+│ ├── otp_verify_screen.dart
+│ ├── forgotpass_screen.dart
+│ ├── recovery_screen.dart
+│ ├── home_screen.dart
+│ ├── product_screen.dart
+│ ├── cart_screen.dart
+│ ├── favourites_screen.dart
+│ ├── shipping_address_screen.dart
+│ ├── payment_method_screen.dart
+│ ├── order_confirm_screen.dart
+│ ├── order_success_screen.dart
+│ ├── profile_screen.dart
+│ ├── navigation_screen.dart
+│
+├── widgets/
+│ ├── container_button_model.dart
+│ ├── product_detail_popup.dart
 
 
 ## 🚀 Getting Started
